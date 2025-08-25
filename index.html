@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>port folio</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="contant">
+            <h1>My Portfolio</h1>
+          </div>
+
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="social">
+            <a href="https://www.linkedin.com/in/mahadev-mondal-2460b22ba" class="social-button">Follow Me</a>
+          </div>
+        </nav>
+    </header>
+    <main>
+    <div class="conter">
+      <section class="hero">
+    <div class="hero-text">
+        <img src="photo..jpg" alt="me" class="me">
+      <h2>Hello, I'm <span id="typed-name"></span></h2>
+      <h3>Aspiring Electring Engineer</h3>
+      <p>Aspiring Web Developer | Designer | Engineer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+    </div>
+    <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate developer who loves creating modern, responsive web applications. 
+      Skilled in HTML, CSS, and JavaScript, I aim to build creative digital solutions.
+    </p>
+     <div class="social-links">
+    <a href="mailto:mondalmahadev816@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/mahadev-mondal-2460b22ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Ooooooo972" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+  </section>
+  
+
+    
+
+    <div class=" but-box">
+         <a href="cv.pdf"> <button class="btn">Download CV</button> </a>
+        
+         <a href="#contact"> <button class="btn">Let's talk</button> </a>
+    </div>
+    <section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <div class="skill-list">
+    <div class="skill">
+      <h3>HTML</h3>
+      <div class="bar">
+        <div class="level" style="width: 90%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>CSS</h3>
+      <div class="bar">
+        <div class="level" style="width: 85%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <div class="bar">
+        <div class="level" style="width: 70%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>Python</h3>
+      <div class="bar">
+        <div class="level" style="width: 75%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>C</h3>
+      <div class="bar">
+        <div class="level" style="width: 64%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h3>AUTOCAD(2D AND 3D)</h3>
+      <div class="bar">
+        <div class="level" style="width: 80%"></div>
+      </div>
+  </div>
+</section>
+    <section id="projects" class="projects">
+    <h2>Projects</h2>
+       <div class="project-grid">
+                <div class="project-card">
+                 <h3>Project 1</h3>
+                 <p>A short description of your project.</p>
+                </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A short description of your project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A short description of your project.</p>
+      </div>
+           </div>
+           </section>
+        </div>
+        <!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Have a question or want to work together? Fill out the form below:</p>
+  
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+        
+    </main>
+   
+     
+
+        <script>
+  const nameText = "MAHADEV MONDAL";  //  Replace with your actual name
+  const typedNameElement = document.getElementById("typed-name");
+
+  let i = 0;
+  function typeEffect() {
+    if (i < nameText.length) {
+      typedNameElement.textContent += nameText.charAt(i);
+      i++;
+      setTimeout(typeEffect, 150); // typing speed (ms)
+    }
+  }
+
+  window.onload = typeEffect;
+</script>
+
+
+
+
+</body>
+</html>

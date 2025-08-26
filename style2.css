@@ -234,6 +234,44 @@ nav {
   background: linear-gradient(90deg, #00adb5, #393e46);
   border-radius: 25px;
 }
+.tools {
+  padding: 50px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tool {
+  background: #f4f4f4;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.tool i {
+  font-size: 2.5rem;
+  color: #00adb5;
+  margin-bottom: 10px;
+}
+
+.tool p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tool:hover {
+  transform: translateY(-5px);
+  background: #e0f7f8;
+}
 
 
 /* Projects */
@@ -314,3 +352,4 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
